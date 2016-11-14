@@ -174,7 +174,7 @@
                 hotWord = STTweetHashtag;
                 break;
             case '&':
-                hotWord = STTWeetAmpersand;
+                hotWord = STTweetAmpersand;
                 break;
             default:
                 break;
@@ -323,7 +323,7 @@
         case STTweetLink:
             _attributesLink = attributes;
             break;
-        case STTWeetAmpersand:
+        case STTweetAmpersand:
             _attributesAmpersand = attributes;
         default:
             break;
