@@ -173,7 +173,7 @@
             case '#':
                 hotWord = STTweetHashtag;
                 break;
-            case '&'
+            case '&':
                 hotWord = STTWeetAmpersand;
                 break;
             default:
