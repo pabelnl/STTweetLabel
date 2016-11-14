@@ -27,6 +27,7 @@
 @property (nonatomic, strong) NSDictionary *attributesHandle;
 @property (nonatomic, strong) NSDictionary *attributesHashtag;
 @property (nonatomic, strong) NSDictionary *attributesLink;
+@property (nonatomic, strong) NSDictionary *attributesAmpersand;
 
 @property (strong) UITextView *textView;
 
