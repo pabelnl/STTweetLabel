@@ -150,14 +150,16 @@
         [tmpText appendString:_cleanText];
     }
 
-    // Define a character set for hot characters (@ handle, # hashtag)
-    NSString *hotCharacters = @"@#";
+    // Define a character set for hot characters (@ handle, # hashtag, & ampersand)
+    NSString *hotCharacters = @"@#&";
     NSCharacterSet *hotCharactersSet = [NSCharacterSet characterSetWithCharactersInString:hotCharacters];
 
     // Define a character set for the complete world (determine the end of the hot word)
     NSMutableCharacterSet *validCharactersSet = [NSMutableCharacterSet alphanumericCharacterSet];
-    [validCharactersSet removeCharactersInString:@"!@#$%^&*()-={[]}|;:',<>.?/"];
+    [validCharactersSet removeCharactersInString:@"!@&#$%^*()-={[]}|;:',<>.?/"];
     [validCharactersSet addCharactersInString:@"_"];
+    [validCharactersSet addCharactersInString:@"-"];
+    [validCharactersSet addCharactersInString:@"."];
 
     _rangesOfHotWords = [[NSMutableArray alloc] init];
 
